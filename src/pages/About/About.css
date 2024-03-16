@@ -1,0 +1,65 @@
+.title_page_sobre{
+    margin: 3rem;
+}
+
+.container_grid{
+    display: flex;
+    margin: 0 3rem 0 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.div_continar_grid_content{
+    background: #F1EB90;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_grid__image_benedito{
+    max-width: 100%;
+    display: block;
+}
+
+.content_patriarca{
+    display: block;
+    text-align: start;
+    margin: 1.5rem;
+    grid-column: 1;
+}
+
+.content_matriarca{
+    display: block;
+    text-align: start;
+    margin: 1rem;
+    grid-column: 1;
+    padding: 0rem;
+}
+
+
+.div_container_content_eliza{
+    grid-column: 2;
+}
+
+.container_grid__image_eliza{
+    grid-column: 1;
+    max-width: 100%;
+    display: block;
+}
+
+.div_container_grid_content_title_benedito,
+.div_container_grid_content_title_eliza{
+    margin: 3rem;
+    border-radius: 1rem;
+}
+
+/* @media (max-width: 1920px){
+    
+    .content{
+        text-align: start;
+        margin-top: 17rem;
+        padding: 5rem 12rem;
+        align-content: center;
+    }
+} */
