@@ -14,7 +14,7 @@ const Navbar = () => {
     return ( 
         <nav className="navbar">
 
-          <NavLink to="/home" className="brand">Mel <span>Dourado</span></NavLink>
+          <NavLink to="/home" className="brand">Mel <br/> <span>Dourado</span></NavLink>
 
           <div className="nav_teste">
 
@@ -23,19 +23,19 @@ const Navbar = () => {
 
                     <li> <NavLink to="/about" className="">Sobre</NavLink></li>
 
-                    {!user && (
+            {!user && (
                     
-                    <ul className="links_link"> 
-                        <li> <NavLink to="/register">Cadastrar</NavLink>
-                        </li>
+                <ul className="links_link"> 
+                    <li> <NavLink to="/register">Cadastrar</NavLink>
+                    </li>
 
-                        <li>
-                            <NavLink to="/login">Login</NavLink>
-                        </li>
+                    <li>
+                        <NavLink to="/login">Login</NavLink>
+                    </li>
                         
-                    </ul>
-                )}
-                
+                </ul>
+            )}
+               
 
                 {user && (
                     <ul className="links_link">

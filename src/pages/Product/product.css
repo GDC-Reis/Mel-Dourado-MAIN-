@@ -18,8 +18,17 @@
 .button_comprar{
     display: inline-block;
     margin-bottom: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
 }
-  
+
+.button_comprar:hover{
+    cursor: pointer;
+}
   
  /* .button_comprar{
     border: none;

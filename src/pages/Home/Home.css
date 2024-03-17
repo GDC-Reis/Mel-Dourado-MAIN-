@@ -33,9 +33,10 @@ h1{
 }
 
 .Container_intro_text{
-    margin: 2rem;
     display: block;
     text-align: start;
+    line-height: 1.38;
+    padding: 1rem;
 }
 
 .Container_Amotra_Produtos{
@@ -86,6 +87,7 @@ h1{
     padding: 1.5rem;
     margin: 1.5rem;
     border-radius: 1rem;
+    line-height: 1.38;
 }
 
 .Effect_Span_Amotra_Produtos{
