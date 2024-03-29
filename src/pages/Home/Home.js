@@ -5,6 +5,7 @@ import './Home.css';
 import {useState, useEffect, useRef} from 'react';
 import {motion} from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import { useAuthValue } from "../../context/AuthContext";
 
 //imagens
 import img1 from '../../images/andrzj-brown-U0qJT3ynHOE-unsplash.jpg';
@@ -14,7 +15,6 @@ import img4 from '../../images/klara-avsenik-5cFqO92t7pM-unsplash.jpg';
 
 //Components
 import Contato from '../../components/Contato';
-import EsqueceuSenha from '../../components/EsqueceuSenha';
 import Footer from '../../components/Footer';
 
 const images = [img1, img2, img3, img4]
@@ -22,6 +22,7 @@ const images = [img1, img2, img3, img4]
 
 const Home = () => {
 
+    const {user} = useAuthValue();
     const carousel = useRef();
     const [width, setWidth] = useState (0);
 
@@ -73,7 +74,14 @@ const Home = () => {
                     </motion.div>
                     {/* </div> */}
                     
-                    <NavLink className='Button_Comprar' to="/register">Comprar</NavLink>
+                    {!user && (
+                        <NavLink className='Button_Comprar' to="/register">Comprar</NavLink>
+                    )}
+
+                    {user && (
+                        <NavLink className='Button_Comprar' to="/product">Comprar</NavLink>
+                    )}
+
                 </div>
             </div>
             
