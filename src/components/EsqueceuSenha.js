@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom"
 
 import './EsqueceuSenha.css'
 
+import Footer from '../components/Footer';
+
 const EsqueceuSenha = () => {
 
     const history = useNavigate();
@@ -23,8 +25,8 @@ const EsqueceuSenha = () => {
     }
 
     return (
-        <div>
-            <div className="App">
+        <section>
+            <div className="main_esqueceu_senha">
                 
                 <h1 className="title_page_esqueceu_senha">Recuperação de Senha</h1>
                 
@@ -36,7 +38,9 @@ const EsqueceuSenha = () => {
                 </div>
                 
             </div>
-        </div>
+
+            <Footer/>
+        </section>
     );
 }
 
