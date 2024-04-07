@@ -29,19 +29,25 @@
     color: #FF0000;
 
 }
-  
 
-@media (min-width: 1920px){
+
+@media (max-width: 1920px){
     
+    .main_login{
+        height: 82vh;
+    }
+
     .esqueceu_senha{
         text-decoration: none;
         position: absolute;
         display: inline-block;
         margin-left: 73rem;
-        margin-top: -2rem;
+        margin-top: -12rem;
         font-size: 0.95rem;
         color: #FF0000;
+        
     }
+
 
 }
 
