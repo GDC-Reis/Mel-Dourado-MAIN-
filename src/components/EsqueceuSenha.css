@@ -34,3 +34,9 @@
         padding: 10px 15px;
         font-size: 1em;
 }
+
+@media (max-width: 1920px){
+    .main_esqueceu_senha{
+        height: 84vh;
+    }
+}
