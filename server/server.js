@@ -27,9 +27,9 @@ app.get("/", function (req, res) {
         },
       ],
       back_urls: {
-        success: "http://localhost:3000",
-        failure: "http://localhost:3000",
-        pending: "",
+        success: "http://localhost:3000/product",
+        failure: "http://localhost:3000/product",
+        pending: "http://localhost:3000/product",
       },
       auto_return: "approved",
     };

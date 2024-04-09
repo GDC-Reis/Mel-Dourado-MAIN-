@@ -29,6 +29,7 @@ const Product = () => {
           },);
     
           const { id } = response.data;
+          console.log(response.data);
           return id;
 
         } catch (error) {
