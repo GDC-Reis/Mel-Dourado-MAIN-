@@ -118,3 +118,14 @@ li{
     display: block;
     padding: 1px;
 }
+
+@media(max-width: 860px){
+    
+    .container_contato_forms{
+        grid-template-columns: 1fr;
+    }
+
+    .form{
+        grid-row: 2;
+    }
+}

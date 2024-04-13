@@ -23,6 +23,8 @@ h1{
 }
 
 .Container_intro{
+    display: flex;
+    flex-wrap: wrap;
     background: #F1EB90;
     padding: 1.5rem;
     margin: 1.5rem;
@@ -33,7 +35,8 @@ h1{
 }
 
 .Container_intro_text{
-    display: block;
+    /* display: flex;
+    flex-wrap: wrap; */
     text-align: start;
     line-height: 1.38;
     padding: 1rem;
@@ -147,3 +150,46 @@ h1{
     }
 }
 
+@media(max-width: 1346px){
+    .SpanEffect_Title_Breve_Resumo,
+    .Effect_Span_Amotra_Produtos{
+        display: none;
+    }
+}
+
+@media (max-width: 1135px){
+    .Container_intro_text{
+        font-size: 0.95rem;
+        padding: 0.35rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .Container_intro_text{
+        font-size: 0.85rem;
+        padding: 0.25rem;
+    }
+}
+
+@media (max-width: 780px){
+    .Container_intro_text{
+        font-size: 0.78rem;
+        padding: 0.10rem;
+    }
+}
+
+@media (max-width: 690px){
+    .Container_intro_text{
+        font-size: 0.73rem;
+    }
+}
+
+@media (max-width: 620px){
+    .Title_breve_resumo{
+        display: none;
+    }
+    
+    .Container_intro{
+       display: none;
+    }
+}
